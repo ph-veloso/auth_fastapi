@@ -1,0 +1,9 @@
+.container {
+    display: flex; /* or inline-flex */
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+body{
+  background-color: red;
+}

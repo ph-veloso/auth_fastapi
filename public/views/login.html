@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+
+    <title>Document</title>
+</head>
+
+<style>
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        padding-top: 10vh;
+    }
+
+    form {
+        border: solid 1px #000;
+        border-radius: 10px;
+        padding: 5%;
+        background-color: #f2d7d9;
+
+        box-shadow: #000 0px 0px 5px;
+    }
+
+    body {
+        background-color: #d3cedf;
+    }
+    .titulo{
+        text-align: center;
+    }
+</style>
+
+<body>
+    <br>
+    <h1 class="titulo">Olá, Visitante!</h1>
+
+    <div class="container">
+        <form class="" method="POST" action="/login">
+            <div class="row">
+                <div class="col-12">
+                    <label for="entrarEmail" class="form-label">Email: </label>
+                    <input type="text" class="form-control" id="entrarEmail" placeholder="nome@exemplo.com ou CPF/PIS" name="login" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <label for="entrarSenha" class="form-label">Senha: </label>
+                    <input type="password" class="form-control" id="entrarSenha" name="senha" />
+                </div>
+
+            </div>
+            <br />
+            <div class="row">
+                <div class="d-grid gap-2">
+                <button type="submit" class="btn btn-primary mb-3">Logar</button>
+                </div>
+            </div>
+
+            <hr />
+            <div class="row">
+                <div class="col-6">
+                    <label for="semLogin" class="form-label">Não tem login? </label>
+                </div>
+                <div class="col-6">
+                    <a href="/cadastro">Cadastre-se</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
